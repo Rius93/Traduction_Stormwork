@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition name="Net Anchor" category="14" type="48" mass="3" value="15" flags="524289" tags="basic,fishing" audio_gain="1" mesh_data_name="meshes/component_fishing_net_hook.mesh" constraint_axis="1" max_motor_force="100" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="10000" force_emitter_max_vector="1" force_emitter_default_pitch="1" force_emitter_blade_physics_length="4.1" engine_max_force="1000" wheel_radius="0.25" button_type="1" light_intensity="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" door_lower_limit="-1" door_upper_limit="1" dynamic_max_rotation="3.141593" logic_gate_subtype="7" magnet_force="1">
+	<tooltip_properties description="Draw a rope logic link between four Net Anchors in a loop to form a net." short_description="An anchor point for a fishing net."/>
+	<sfx_datas>
+		<sfx_data sfx_name="winch" sfx_range_inner="2" sfx_range_outer="20">
+			<sfx_layers>
+				<sfx_layer sfx_filename_loop="audio/fx/servo_medium_loop.ogg" sfx_volume_fade_speed="0.1" sfx_pitch_fade_speed="0.1"/>
+			</sfx_layers>
+		</sfx_data>
+		<sfx_data sfx_name="snap" sfx_range_inner="2" sfx_range_outer="20">
+			<sfx_layers>
+				<sfx_layer sfx_filename_start="audio/fx5/ropesnap_03.ogg" sfx_volume_fade_speed="0.1" sfx_pitch_fade_speed="0.1"/>
+			</sfx_layers>
+		</sfx_data>
+	</sfx_datas>
+	<surfaces>
+		<surface orientation="5">
+			<position/>
+		</surface>
+		<surface>
+			<position/>
+		</surface>
+		<surface orientation="1">
+			<position/>
+		</surface>
+		<surface orientation="4">
+			<position/>
+		</surface>
+		<surface orientation="2">
+			<position/>
+		</surface>
+		<surface orientation="4">
+			<position y="-1"/>
+		</surface>
+		<surface orientation="1">
+			<position y="-1"/>
+		</surface>
+		<surface orientation="5">
+			<position y="-1"/>
+		</surface>
+		<surface>
+			<position y="-1"/>
+		</surface>
+		<surface orientation="3">
+			<position y="-1"/>
+		</surface>
+	</surfaces>
+	<buoyancy_surfaces>
+		<surface orientation="4" shape="1">
+			<position/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position/>
+		</surface>
+		<surface shape="1">
+			<position/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position y="-1"/>
+		</surface>
+		<surface shape="1">
+			<position y="-1"/>
+		</surface>
+		<surface orientation="4" shape="1">
+			<position y="-1"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1"/>
+		</surface>
+	</buoyancy_surfaces>
+	<logic_nodes>
+		<logic_node label="Net Node" mode="1" type="8">
+			<position y="1"/>
+		</logic_node>
+		<logic_node label="Release Catch" mode="1">
+			<position y="1"/>
+		</logic_node>
+		<logic_node label="Extend" mode="1">
+			<position/>
+		</logic_node>
+		<logic_node label="Retract" mode="1">
+			<position y="-1"/>
+		</logic_node>
+		<logic_node label="Net Data" type="5" description="Outputs attached net data. Value 1: net fill level, Value 2: net extend factor.">
+			<position/>
+		</logic_node>
+	</logic_nodes>
+	<couplings/>
+	<voxels>
+		<voxel flags="1">
+			<position/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+	</voxels>
+	<voxel_min y="-1"/>
+	<voxel_max y="1"/>
+	<voxel_physics_min y="-1"/>
+	<voxel_physics_max/>
+	<bb_physics_min/>
+	<bb_physics_max/>
+	<compartment_sample_pos/>
+	<constraint_pos_parent/>
+	<constraint_pos_child/>
+	<voxel_location_child/>
+	<seat_offset/>
+	<seat_front/>
+	<seat_up/>
+	<seat_camera/>
+	<seat_render/>
+	<force_dir y="1"/>
+	<light_position/>
+	<light_color x="1" y="1" z="1"/>
+	<light_forward/>
+	<door_size x="1" y="1" z="1"/>
+	<door_normal/>
+	<door_side/>
+	<door_up/>
+	<door_base_pos/>
+	<dynamic_body_position/>
+	<dynamic_rotation_axes y="1"/>
+	<dynamic_side_axis x="1"/>
+	<magnet_offset/>
+	<connector_axis/>
+	<connector_up/>
+	<jet_engine_connections_prev/>
+	<jet_engine_connections_next/>
+	<particle_direction/>
+	<particle_offset/>
+	<particle_bounds/>
+	<rope_hook_offset y="-0.05"/>
+</definition>
+
