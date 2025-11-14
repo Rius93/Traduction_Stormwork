@@ -1,14 +1,15 @@
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <meta type="3" max_spawned="1" is_repeatable="true"/>
 <definition_data power_station_team_size="12" waste_barrel_filename="nuclear_waste.xml" forklift_filename="forklift_nuclear.xml">
 
     <freight_delivery 
-        desc_long="Deliver a shipment of containers to the Brinkfield Nuclear Plant." 
-        desc_short="Deliver a shipment of containers." 
-        title="Brinkfield Container Delivery" 
-        obj_1_text="Deliver 1 container" 
-        obj_2_text="Deliver 3 containers" 
-        obj_3_text="Deliver all containers" 
+        desc_long="Livrez un chargement de conteneurs à la centrale nucléaire de Brinkfield." 
+        desc_short="Livrez un chargement de conteneurs." 
+        title="Livraison de conteneurs à Brinkfield" 
+        obj_1_text="Livrez 1 conteneur" 
+        obj_2_text="Livrez 3 conteneurs" 
+        obj_3_text="Livrez tous les conteneurs" 
         obj_1_count="1" 
         obj_2_count="3" 
         obj_3_count="5"
@@ -18,12 +19,12 @@
         difficulty="2"/>
 
     <waste_rescue 
-        desc_long="Several toxic waste barrels have been spotted off the coast of a small, uninhabited island. Recover them and return them to the Brinkfield Nuclear Plant." 
-        desc_short="Recover washed-up toxic waste barrels." 
-        title="Brinkfield Waste Recovery" 
-        obj_1_text="Recover 2 barrels" 
-        obj_2_text="Recover 4 barrels" 
-        obj_3_text="Recover 6 barrels" 
+        desc_long="Plusieurs fûts de déchets toxiques ont été repérés au large d’une petite île inhabitée. Récupérez-les et ramenez-les à la centrale nucléaire de Brinkfield." 
+        desc_short="Récupérez les fûts de déchets toxiques échoués." 
+        title="Récupération de déchets à Brinkfield" 
+        obj_1_text="Récupérez 2 fûts" 
+        obj_2_text="Récupérez 4 fûts" 
+        obj_3_text="Récupérez 6 fûts" 
         obj_1_count="2" 
         obj_2_count="4" 
         obj_3_count="6"
@@ -33,12 +34,12 @@
         difficulty="3"/>
 	
     <waste_handling 
-        desc_long="Operate the waste disposal equipment at the Brinkfield Nuclear Plant to help dispose of toxic waste drums. Get the drums into the disposal pool beneath the facility." 
-        desc_short="Dispose of toxic waste drums." 
-        title="Brinkfield Waste Handling" 
-        obj_1_text="Dispose of 1 drum" 
-        obj_2_text="Dispose of 2 drums" 
-        obj_3_text="Dispose of 3 drums" 
+        desc_long="Utilisez les équipements d’élimination des déchets de la centrale nucléaire de Brinkfield pour aider à traiter les fûts de déchets toxiques. Faites tomber les fûts dans le bassin de destruction sous l’installation." 
+        desc_short="Éliminez les fûts de déchets toxiques." 
+        title="Gestion des déchets à Brinkfield" 
+        obj_1_text="Éliminez 1 fût" 
+        obj_2_text="Éliminez 2 fûts" 
+        obj_3_text="Éliminez 3 fûts" 
         obj_1_count="1" 
         obj_2_count="2" 
         obj_3_count="3" 
@@ -48,33 +49,33 @@
         difficulty="2"/>
 
 	<crew_transport 
-        desc_long="Transport the 4 engineers from their HQ at the Brinkfield Nuclear Plant to the offshore wind turbine for maintenance tests." 
-        desc_short="Transport engineers to the offshore wind turbine." 
-        title="Brinkfield Engineer Transport" 
-        obj_1_text="Tranport 1 engineer" 
-        obj_2_text="Tranport 2 engineer" 
-        obj_3_text="Tranport 4 engineers" 
+        desc_long="Transportez les 4 ingénieurs depuis leur QG à la centrale nucléaire de Brinkfield jusqu’à l’éolienne en mer pour des tests de maintenance." 
+        desc_short="Transportez les ingénieurs jusqu’à l’éolienne en mer." 
+        title="Transport des ingénieurs de Brinkfield" 
+        obj_1_text="Transportez 1 ingénieur" 
+        obj_2_text="Transportez 2 ingénieurs" 
+        obj_3_text="Transportez 4 ingénieurs" 
         obj_1_count="1" 
         obj_2_count="2" 
         obj_3_count="4"
         difficulty="2"/>
 
 	<turbine_maintenance 
-        desc_long="Assist the Brinkfield engineers at the offshore wind turbine by delivering and installing a replacement generator component." 
-        desc_short="Assist turbine maintenance work." 
-        title="Brinkfield Turbine Maintenance" 
-        obj_1_text="Deliver component" 
-        obj_2_text="Install component" 
-        obj_3_text="Efficiency bonus"
+        desc_long="Aidez les ingénieurs de Brinkfield à l’éolienne en mer en livrant et en installant un composant de générateur de remplacement." 
+        desc_short="Assistez les travaux de maintenance de l’éolienne." 
+        title="Maintenance de l’éolienne de Brinkfield" 
+        obj_1_text="Livrez le composant" 
+        obj_2_text="Installez le composant" 
+        obj_3_text="Bonus d’efficacité"
         difficulty="2"/>
 
 	<turbine_rescue 
-        desc_long="A major malfunction caused by a newly installed component has set the Brinkfield Offshore Wind Turbine ablaze. Rescue the engineers as quickly as possible." 
-        desc_short="Rescue engineers from the offshore wind turbine." 
-        title="Brinkfield Turbine Rescue" 
-        obj_1_text="Rescue 1 engineer"
-        obj_2_text="Rescue 2 engineers" 
-        obj_3_text="Rescue all engineers" 
+        desc_long="Une grave panne causée par un composant nouvellement installé a provoqué un incendie sur l’éolienne en mer de Brinkfield. Sauvez les ingénieurs le plus rapidement possible." 
+        desc_short="Sauvez les ingénieurs de l’éolienne en mer." 
+        title="Sauvetage à l’éolienne de Brinkfield" 
+        obj_1_text="Sauvez 1 ingénieur"
+        obj_2_text="Sauvez 2 ingénieurs" 
+        obj_3_text="Sauvez tous les ingénieurs" 
         obj_1_count="1" 
         obj_2_count="2" 
         obj_3_count="4" 
@@ -84,4 +85,4 @@
         difficulty="3"/>
 
 </definition_data>
-
+```
