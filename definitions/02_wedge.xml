@@ -71,7 +71,7 @@
 	<magnet_offset x="0" y="0" z="0"/>
 	<connector_axis x="0" y="1" z="0"/>
 	<connector_up x="1" y="0" z="0"/>
-	<tooltip_properties description="Les composants peuvent être attachés à toutes les faces, à l’exception de la face inclinée." short_description="Bloc de construction basique en forme de coin."/>
+	<tooltip_properties description="Les composants peuvent être fixés sur toutes les faces, sauf la face inclinée." short_description="Bloc de construction de base en forme de cale."/>
 	<reward_properties number_rewarded="250"/>
 	<jet_engine_connections_prev/>
 	<jet_engine_connections_next/>
