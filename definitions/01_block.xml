@@ -63,7 +63,6 @@
 	<dynamic_rotation_axes x="0.000000" y="1.000000" z="0.000000"/>
 	<dynamic_side_axis x="1.000000" y="0.000000" z="0.000000"/>
 	<magnet_offset x="0.000000" y="0.000000" z="0.000000"/>
-	<tooltip_properties description="The block is a quarter-metre in size. Components can be attached to all 6 faces." short_description="Basic cube-shaped building block."/>
+	<tooltip_properties description="Ce bloc mesure un quart de mètre. Des composants peuvent être attachés à ses 6 faces." short_description="Bloc de base en forme de cube."/>
 	<reward_properties tier="0" number_rewarded="2000"/>
 </definition>
-
