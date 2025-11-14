@@ -122,11 +122,11 @@
 	<door_base_pos/>
 	<dynamic_body_position/>
 	<dynamic_rotation_axes y="1"/>
-	<dynamic_side_axis x="1"/>
+  	<dynamic_side_axis x="1"/>
 	<magnet_offset/>
 	<connector_axis/>
 	<connector_up/>
-	<tooltip_properties description="An intercooler that averages heat between air and a liquid at a rate proportional to the component's size." short_description="A heat exchanger that averages heat between air and a liquid."/>
+	<tooltip_properties description="Un intercooler qui égalise la chaleur entre l'air et un liquide à une vitesse proportionnelle à la taille du composant." short_description="Un échangeur de chaleur qui égalise la chaleur entre l'air et un liquide."/>
 	<jet_engine_connections_prev/>
 	<jet_engine_connections_next/>
 	<particle_direction/>
@@ -134,4 +134,3 @@
 	<particle_bounds/>
 	<rope_hook_offset/>
 </definition>
-
