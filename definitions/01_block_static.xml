@@ -79,7 +79,7 @@
 	<magnet_offset x="0" y="0" z="0"/>
 	<connector_axis x="0" y="1" z="0"/>
 	<connector_up x="1" y="0" z="0"/>
-	<tooltip_properties description="This block cannot be removed." short_description="Static root block used as a base for all vehicles."/>
+	<tooltip_properties description="Ce bloc ne peut pas être supprimé." short_description="Bloc racine statique servant de base à tous les véhicules."/>
 	<jet_engine_connections_prev/>
 	<jet_engine_connections_next/>
 	<particle_direction x="0" y="1" z="0"/>
@@ -87,4 +87,3 @@
 	<particle_bounds x="0.2" y="0.2" z="0.2"/>
 	<rope_hook_offset x="0" y="0" z="0"/>
 </definition>
-
