@@ -1,6 +1,9 @@
+Voici le fichier modifié :
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <definition name="Torque Connector" category="2" type="17" mass="2" value="20" flags="1048576" tags="magnet" audio_filename_start="audio/fx/connector_small.ogg" audio_gain="1" mesh_data_name="meshes/component_torque_connector.mesh" constraint_axis="1" max_motor_force="100" cable_radius="0" cable_length="16" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" wheel_radius="0.25" button_type="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" door_lower_limit="-1" door_upper_limit="1" dynamic_max_rotation="3.141593" logic_gate_type="1" connector_type="9" magnet_force="0.1" rudder_surface_area="0">
-	<tooltip_properties description="Two torque connectors will attach when they are within close proximity. When connected, mechanical energy will be transferred between the connectors." short_description="A small torque connector that can be used to transfer mechanical energy between vehicles."/>
+	<tooltip_properties description="Deux connecteurs de couple s'attacheront lorsque ils seront proches l'un de l'autre. Lorsqu'ils sont connectés, l'énergie mécanique sera transférée entre les connecteurs." short_description="Un petit connecteur de couple qui peut être utilisé pour transférer l'énergie mécanique entre les véhicules."/>
 	<sfx_datas>
 		<sfx_data sfx_name="connector" sfx_range_inner="5" sfx_range_outer="30" sfx_priority="0.6">
 			<sfx_layers>
@@ -46,27 +49,24 @@
 		</surface>
 	</buoyancy_surfaces>
 	<logic_nodes>
-		<logic_node label="Release Connector" mode="1" description="Release the connector when receiving an on signal.">
-			<position/>
-		</logic_node>
-		<logic_node label="Connected" description="Outputs an on signal if the connector is attached to another connector.">
-			<position y="1"/>
-		</logic_node>
-		<logic_node orientation="3" label="RPS" type="2" description="Power connection for transfering mechanical energy.">
-			<position/>
-		</logic_node>
-		<logic_node label="Composite Data Send" mode="1" type="5" description="Composite data to send to the connected connector.">
-			<position/>
-		</logic_node>
-		<logic_node label="Composite Data Receive" type="5" description="Composite data to receive from the connected connector.">
-			<position y="1"/>
-		</logic_node>
-		<logic_node label="Video Data Send" mode="1" type="6" description="Video data to send to the connected connector.">
-			<position/>
-		</logic_node>
-		<logic_node label="Video Data Receive" type="6" description="Video data to receive from the connected connector.">
-			<position y="1"/>
-		</logic_node>
+		<logic_node label="Release Connector" mode="1" description="Lâcher le connecteur lors de la réception d'un signal d'allumage."
+ />
+		<logic_node label="Connecté" description="Sortie un signal d'allumage si le connecteur est attaché à un autre connecteur."
+ />
+		<logic_node orientation="3" label="RPS" type="2" description="Pouvoir de connexion pour la transmission de l'énergie mécanique.
+ />
+		<logic_node label="Envoyer des données composées" mode="1" type="5" description="Données composées à envoyer au connecteur connecté.
+ "
+ />
+		<logic_node label="Recevoir des données composées" type="5" description="Données composées à recevoir du connecteur connecté.
+ "
+ />
+		<logic_node label="Envoyer des données vidéo" mode="1" type="6" description="Données vidéo à envoyer au connecteur connecté.
+ "
+ />
+		<logic_node label="Recevoir les données vidéo" type="6" description="Données vidéo à recevoir du connecteur connecté.
+ "
+ />
 	</logic_nodes>
 	<couplings/>
 	<voxels>
@@ -116,4 +116,4 @@
 	<particle_bounds/>
 	<rope_hook_offset/>
 </definition>
-
+```
