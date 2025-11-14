@@ -63,7 +63,6 @@
 	<dynamic_rotation_axes x="0.000000" y="1.000000" z="0.000000"/>
 	<dynamic_side_axis x="1.000000" y="0.000000" z="0.000000"/>
 	<magnet_offset x="0.000000" y="0.000000" z="0.000000"/>
-	<tooltip_properties description="Weight blocks have a larger impact on the vehicle's centre of mass, making them useful for balance and stability." short_description="Basic cube-shaped building block with an increased mass."/>
+	<tooltip_properties description="Les blocs de poids ont un impact plus important sur le centre de masse du véhicule, ce qui les rend utiles pour l'équilibre et la stabilité." short_description="Bloc de construction de base en forme de cube, avec une masse augmentée."/>
 	<reward_properties tier="0" number_rewarded="400"/>
 </definition>
-
