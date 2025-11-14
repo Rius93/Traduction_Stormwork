@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition name="Drapeau (Moyen)" category="8" type="65" mass="2" value="75" mesh_data_name="meshes/component_flagpole_MEDIUM.mesh" mesh_editor_only_name="meshes/arrow_flagpole_MEDIUM.mesh" constraint_axis="1" max_motor_force="100" cable_length="16" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" wheel_radius="0.25" button_type="1" light_intensity="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" door_lower_limit="-1" door_upper_limit="1" dynamic_max_rotation="3.141593" magnet_force="1">
-	<tooltip_properties description="Le design du drapeau peut être défini dans le menu des propriétés." short_description="Le drapeau est de moyenne taille."/>
+<definition name="Flag (Medium)" category="8" type="65" mass="2" value="75" mesh_data_name="meshes/component_flagpole_medium.mesh" mesh_editor_only_name="meshes/arrow_flagpole_medium.mesh" constraint_axis="1" max_motor_force="100" cable_length="16" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" wheel_radius="0.25" button_type="1" light_intensity="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" door_lower_limit="-1" door_upper_limit="1" dynamic_max_rotation="3.141593" magnet_force="1">
+	<tooltip_properties description="The flag design can be set in the properties menu." short_description="A medium sized flagpole."/>
 	<sfx_datas/>
 	<surfaces>
 		<surface orientation="3">
@@ -60,7 +60,7 @@
 	<door_up/>
 	<door_base_pos/>
 	<dynamic_body_position/>
-	!<dynamic_rotation_axes y="1"/>
+	<dynamic_rotation_axes y="1"/>
 	<dynamic_side_axis x="1"/>
 	<magnet_offset/>
 	<connector_axis/>
@@ -72,3 +72,4 @@
 	<particle_bounds/>
 	<rope_hook_offset/>
 </definition>
+
