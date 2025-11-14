@@ -1,4 +1,4 @@
-Here’s a cleaned-up and slightly improved version of your XML that keeps the same structure and gameplay meaning, while fixing minor repetition and making texts clearer and more consistent:
+This XML defines configuration for an NPC speedboat and three mission types associated with it:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -11,29 +11,47 @@ Here’s a cleaned-up and slightly improved version of your XML that keeps the s
     character_outfit_category="4">
 
     <delivery_mission 
-        title="Deliver Fuel Barrel"
-        desc_short="Stranded speedboat requires fuel."
-        desc_long="Collect fuel from a nearby oil rig and deliver it to the stranded speedboat."
-        obj_1_text="Collect the fuel barrel from the oil rig."
-        obj_2_text="Transport the fuel barrel to the stranded speedboat."
-        obj_3_text="Deliver the fuel barrel to the speedboat." />
+        desc_long="Collect fuel from a nearby oil rig and deliver to the stranded speedboat." 
+        desc_short="Stranded speedboat requires fuel." 
+        title="Deliver fuel barrel" 
+        obj_1_text="Deliver fuel barrel" 
+        obj_2_text="Deliver fuel barrel" 
+        obj_3_text="Deliver fuel barrel"/>
 
     <runaway_boat_mission 
-        title="Runaway Speedboat"
-        desc_short="Stop the runaway speedboat."
-        desc_long="Shut down the speedboat's engine and return the boat to its owner."
-        difficulty="3" />
+        desc_long="Shut the speedboat's engine down and deliver it back to its owner." 
+        desc_short="Stop the runaway speedboat." 
+        title="Runaway Speedboat" 
+        difficulty="3"/>
 
     <sinking_boat_mission 
-        title="Sinking Speedboat"
-        desc_short="Rescue the sailor from his sinking speedboat."
-        desc_long="Rescue the stranded sailor from his sinking speedboat and transport him to the nearby hospital for emergency medical care."
-        obj_1_text="Rescue the sailor from the sinking speedboat."
-        obj_2_text="Transport the sailor to the hospital."
-        obj_3_text="Ensure the sailor receives emergency medical care."
-        difficulty="1" />
-
+        desc_long="Rescue the stranded sailor and transport him to the nearby hospital for emergency medical care." 
+        desc_short="Rescue the sailor from his sinking speedboat." 
+        title="Sinking Speedboat" 
+        obj_1_text="Rescue sailor" 
+        obj_2_text="Rescue sailor" 
+        obj_3_text="Rescue sailor" 
+        difficulty="1"/>
 </definition_data>
 ```
 
-If you tell me which game or engine this is for (e.g., Stormworks, custom game, etc.), I can tailor the attributes and text more precisely to match its mission system conventions.
+Summary of elements:
+
+- `<meta>`:  
+  - `type="1"` – some internal classification.  
+  - `max_spawned="5"` – up to 5 instances can exist simultaneously.  
+  - `is_repeatable="true"` – missions/events using this can repeat.
+
+- `<definition_data>`:  
+  - `vehicle_filename="test_npc_boat.xml"` – file for the boat’s actual vehicle definition.  
+  - `vehicle_name="speedboat"` – in‑game name/identifier.  
+  - `map_travel_speed="0.5"` – how fast it travels on the world map.  
+  - `character_outfit_category="4"` – outfit group for its crew/NPC.
+
+- `<delivery_mission>`: fuel delivery objective for a stranded speedboat; all three objective texts are identical (“Deliver fuel barrel”).
+
+- `<runaway_boat_mission>`: stop a runaway boat and return it; includes `difficulty="3"`.
+
+- `<sinking_boat_mission>`: rescue a sailor from a sinking boat and bring them to a hospital; three identical rescue objective texts; `difficulty="1"` (easier than the runaway mission).
+
+If you tell me what system or game this is for and what you want to change (e.g., difficulty, texts, more objectives, more mission types), I can rewrite or extend the XML accordingly.
