@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition name="Cryo Cooler" category="9" type="24" mass="4" value="30" mesh_data_name="meshes/component_cryo_heat_exchanger.mesh" pump_pressure="0.01" water_component_type="33">
+	<sfx_datas/>
+	<surfaces>
+		<surface orientation="2" shape="3" trans_type="2">
+			<position y="1"/>
+		</surface>
+		<surface orientation="2" shape="3" trans_type="2">
+			<position y="1" z="-1"/>
+		</surface>
+		<surface orientation="3" shape="3" trans_type="2">
+			<position/>
+		</surface>
+		<surface orientation="3" shape="3" trans_type="2">
+			<position z="-1"/>
+		</surface>
+		<surface orientation="5">
+			<position z="-1"/>
+		</surface>
+		<surface orientation="5">
+			<position y="1" z="-1"/>
+		</surface>
+		<surface>
+			<position z="-1"/>
+		</surface>
+		<surface>
+			<position/>
+		</surface>
+        <surface>
+			<position y="1" z="-1"/>
+		</surface>
+		<surface>
+			<position y="1"/>
+		</surface>
+		<surface orientation="4">
+			<position y="1"/>
+		</surface>
+		<surface orientation="4">
+			<position/>
+		</surface>
+        <surface orientation="1">
+			<position z="-1"/>
+		</surface>
+		<surface orientation="1">
+			<position/>
+		</surface>
+        <surface orientation="1">
+			<position y="1" z="-1"/>
+		</surface>
+		<surface orientation="1">
+			<position y="1"/>
+		</surface>
+	</surfaces>
+	<buoyancy_surfaces>
+		<surface orientation="2" shape="1">
+			<position y="1"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1" z="-1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position z="-1"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position z="-1"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position y="1" z="-1"/>
+		</surface>
+		<surface shape="1">
+			<position z="-1"/>
+		</surface>
+		<surface shape="1">
+			<position/>
+		</surface>
+        <surface shape="1">
+			<position y="1" z="-1"/>
+		</surface>
+		<surface shape="1">
+			<position y="1"/>
+		</surface>
+		<surface orientation="4" shape="1">
+			<position y="1"/>
+		</surface>
+		<surface orientation="4" shape="1">
+			<position/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position z="-1"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1" z="-1"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1"/>
+		</surface>
+	</buoyancy_surfaces>
+	<logic_nodes>
+		<logic_node orientation="2" label="Liquid A In" mode="1" type="3" description="Input liquid port for liquid that gets cooled.">
+			<position y="1" z="-1"/>
+		</logic_node>
+		<logic_node orientation="3" label="Liquid A Out" mode="1" type="3" description="Output liquid port for liquid that gets cooled.">
+			<position z="-1"/>
+		</logic_node>
+		<logic_node orientation="2" label="Liquid B In" mode="1" type="3" description="Input liquid port for liquid that gets warmed.">
+			<position y="1"/>
+		</logic_node>
+		<logic_node orientation="3" label="Liquid B Out" mode="1" type="3" description="Output liquid port for liquid that gets warmed.">
+			<position/>
+		</logic_node>
+		<logic_node label="Temp A" type="1" description="Compartment temperature.">
+			<position y="1" z="-1"/>
+		</logic_node>
+		<logic_node label="Temp B" type="1" description="Compartment temperature.">
+			<position y="1"/>
+		</logic_node>
+        <logic_node label="Electric" mode="1" type="4" description="Electrical power connection.">
+			<position/>
+		</logic_node>
+		<logic_node orientation="0" label="On/Off" mode="1" type="0" description="Controls whether or not the component transfers heat between liquids." flags="0">
+			<position/>
+		</logic_node>
+	</logic_nodes>
+	<couplings/>
+	<voxels>
+		<voxel flags="1" buoy_pipes="63">
+			<position/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1" buoy_pipes="63">
+			<position z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1" buoy_pipes="63">
+			<position y="1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1" buoy_pipes="63">
+			<position y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+	</voxels>
+	<voxel_min/>
+	<voxel_max z="-1"/>
+	<voxel_physics_min/>
+	<voxel_physics_max y="1"/>
+	<bb_physics_min/>
+	<bb_physics_max/>
+	<compartment_sample_pos/>
+	<constraint_pos_parent/>
+	<constraint_pos_child/>
+	<voxel_location_child/>
+	<seat_offset/>
+	<seat_front/>
+	<seat_up/>
+	<seat_camera/>
+	<seat_render/>
+	<force_dir/>
+	<light_position/>
+	<light_color x="1" y="1" z="1"/>
+	<light_forward/>
+	<door_size x="1" y="1" z="1"/>
+	<door_normal/>
+	<door_side/>
+	<door_up/>
+	<door_base_pos/>
+	<dynamic_body_position/>
+	<dynamic_rotation_axes y="1"/>
+	<dynamic_side_axis x="1"/>
+	<magnet_offset/>
+	<connector_axis/>
+	<connector_up/>
+	<tooltip_properties description="A component that cools liquid A and transfers the heat to liquid B." short_description="A powered component that creates a temperature difference between two liquid systems."/>
+	<jet_engine_connections_prev/>
+	<jet_engine_connections_next/>
+	<particle_direction/>
+	<particle_offset/>
+	<particle_bounds/>
+	<rope_hook_offset/>
+</definition>
