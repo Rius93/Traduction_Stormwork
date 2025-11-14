@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition name="Saddle Passenger Seat" category="4" type="1" mass="3" value="25" flags="8192" tags="basic,seat" mesh_data_name="meshes/component_seat_saddle_passenger.mesh" cable_radius="0" cable_length="16" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" rudder_surface_area="0">
+	<tooltip_properties description="You can get in and out of the seat by interacting with it using [$[action_use_seat]]. You can place a rescued survivor in any seat by using [$[action_use_seat]] while carrying them." short_description="A small padded passenger seat."/>
+	<sfx_datas/>
+	<surfaces>
+		<surface orientation="3">
+			<position/>
+		</surface>
+		<surface orientation="3">
+			<position z="-1"/>
+		</surface>
+	</surfaces>
+	<buoyancy_surfaces>
+		<surface orientation="3" shape="1">
+			<position z="-1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position/>
+		</surface>
+	</buoyancy_surfaces>
+	<logic_nodes>
+		<logic_node label="Occupied" description="Outputs an on signal if the seat is occupied by a character.">
+			<position z="-1"/>
+		</logic_node>
+	</logic_nodes>
+	<couplings/>
+	<voxels>
+		<voxel flags="3">
+			<position/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="3">
+			<position x="-1"/>
+			<physics_shape_rotation 00="0" 01="1" 11="0" 12="1" 20="1" 22="0"/>
+		</voxel>
+		<voxel flags="3">
+			<position x="1"/>
+			<physics_shape_rotation 00="0" 01="-1" 11="0" 12="1" 20="-1" 22="0"/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="3" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="3" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="3" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="2" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="2" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="2" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="3">
+			<position x="-1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="3">
+			<position z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="3">
+			<position x="1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+	</voxels>
+	<voxel_min x="-1" z="-1"/>
+	<voxel_max x="1" y="3"/>
+	<voxel_physics_min x="-1" z="-1"/>
+	<voxel_physics_max x="1"/>
+	<bb_physics_min x="-0.25" y="0.375" z="-0.375"/>
+	<bb_physics_max x="0.25" y="1.125" z="-0.3"/>
+	<compartment_sample_pos/>
+	<constraint_pos_parent/>
+	<constraint_pos_child/>
+	<voxel_location_child/>
+	<seat_offset y="0.47" z="0.12"/>
+	<seat_front/>
+	<seat_up/>
+	<seat_camera y="-0.9"/>
+	<seat_render y="-0.85" z="-0.225"/>
+	<force_dir/>
+	<light_position/>
+	<light_color x="1" y="1" z="1"/>
+	<light_forward/>
+	<door_size x="1" y="1" z="1"/>
+	<door_normal/>
+	<door_side/>
+	<door_up/>
+	<door_base_pos/>
+	<dynamic_body_position/>
+	<dynamic_rotation_axes y="1"/>
+	<dynamic_side_axis x="1"/>
+	<magnet_offset/>
+	<connector_axis/>
+	<connector_up/>
+	<jet_engine_connections_prev/>
+	<jet_engine_connections_next/>
+	<particle_direction/>
+	<particle_offset/>
+	<particle_bounds/>
+	<rope_hook_offset/>
+</definition>
+

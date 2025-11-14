@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition name="Space Seat" category="1" type="1" mass="3" value="500" flags="8192" tags="basic,seat,control,pilot" mesh_data_name="meshes/component_space_seat.mesh" cable_radius="0" seat_pose="7" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" rudder_surface_area="0" radar_range="3">
+	<tooltip_properties description="It provides 4 number outputs that produce a standard value ranging from -1 to 1, and 6 on/off outputs. You can get in and out of the space seat by interacting with it using [$[action_use_seat]]." short_description="The space seat lets you translate keyboard presses into output signals that can control logic components."/>
+	<sfx_datas/>
+	<surfaces>
+		<surface orientation="5" shape="1">
+			<position x="-1" y="1"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position x="-1"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position x="-1" y="-1"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position y="-1"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position x="1" y="-1"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position x="1"/>
+		</surface>
+		<surface orientation="5" shape="3" trans_type="2">
+			<position/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position y="1"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position x="1" y="1"/>
+		</surface>
+	</surfaces>
+	<buoyancy_surfaces>
+		<surface orientation="4" shape="1">
+			<position/>
+		</surface>
+	</buoyancy_surfaces>
+	<logic_nodes>
+		<logic_node label="Occupied" description="Outputs an on signal if the handle is occupied by a character.">
+			<position z="2"/>
+		</logic_node>
+		<logic_node label="Trigger [$[action_trigger]]" description="Outputs an on signal when [$[action_trigger]] is held, and off when it is not.">
+			<position/>
+		</logic_node>
+		<logic_node label="Look X" type="1" description="Outputs the character look direction in turns along the X-axis.">
+			<position x="-1" y="2" z="1"/>
+		</logic_node>
+		<logic_node label="Look Y" type="1" description="Outputs the character look direction in turns along the Y-axis.">
+			<position x="1" y="2" z="1"/>
+		</logic_node>
+		<logic_node label="Axis 1 [$[action_left]]/[$[action_right]]" type="1" description="Outputs a standard value between -1 and 1, controlled using [$[action_left]] and [$[action_right]]. [$[action_left]] causes the output value to move towards -1, and [$[action_right]] moves it towards 1.">
+			<position x="-1" z="1"/>
+		</logic_node>
+		<logic_node label="Axis 2 [$[action_up]]/[$[action_down]]" type="1" description="Outputs a standard value between -1 and 1, controlled using [$[action_up]] and [$[action_down]]. [$[action_down]] causes the output value to move towards -1, and [$[action_up]] moves it towards 1.">
+			<position x="1" z="1"/>
+		</logic_node>
+		<logic_node label="Axis 3 [$[action_pedal_left]]/[$[action_pedal_right]]" type="1" description="Outputs a standard value between -1 and 1, controlled using [$[action_pedal_left]] and [$[action_pedal_right]]. [$[action_pedal_left]] causes the output value to move towards -1, and [$[action_pedal_right]] moves it towards 1.">
+			<position x="-1" y="-1" z="1"/>
+		</logic_node>
+		<logic_node label="Axis 4 [$[action_throttle_up]]/[$[action_throttle_down]]" type="1" description="Outputs a standard value between -1 and 1, controlled using [$[action_throttle_up]] and [$[action_throttle_down]]. [$[action_throttle_down]] causes the output value to move towards -1, and [$[action_throttle_up]] moves it towards 1.">
+			<position x="1" y="-1" z="1"/>
+		</logic_node>
+		<logic_node label="Hotkey 1 [$[action_hotkey_1]]" description="Outputs an on signal when [$[action_hotkey_1]] is held, and off when it is not.">
+			<position x="-1" y="1" z="2"/>
+		</logic_node>
+		<logic_node label="Hotkey 2 [$[action_hotkey_2]]" description="Outputs an on signal when [$[action_hotkey_2]] is held, and off when it is not.">
+			<position x="-1" z="2"/>
+		</logic_node>
+		<logic_node label="Hotkey 3 [$[action_hotkey_3]]" description="Outputs an on signal when [$[action_hotkey_3]] is held, and off when it is not.">
+			<position x="-1" y="-1" z="2"/>
+		</logic_node>
+		<logic_node label="Hotkey 4 [$[action_hotkey_4]]" description="Outputs an on signal when [$[action_hotkey_4]] is held, and off when it is not.">
+			<position x="1" y="1" z="2"/>
+		</logic_node>
+		<logic_node label="Hotkey 5 [$[action_hotkey_5]]" description="Outputs an on signal when [$[action_hotkey_5]] is held, and off when it is not.">
+			<position x="1" z="2"/>
+		</logic_node>
+		<logic_node label="Hotkey 6 [$[action_hotkey_6]]" description="Outputs an on signal when [$[action_hotkey_6]] is held, and off when it is not.">
+			<position x="1" y="-1" z="2"/>
+		</logic_node>
+		<logic_node label="Seat data" type="5" description="Outputs the axis, hotkey and occupied data from the helm. (On/Off 1+ : Hotkeys) (On/Off 31 : Trigger) (On/Off 32 : Occupied) (Value 1 : [$[action_left]]/[$[action_right]]) (Value 2 : [$[action_up]]/[$[action_down]]) (Value 3 : [$[action_pedal_left]]/[$[action_pedal_right]]) (Value 4 : [$[action_throttle_up]]/[$[action_throttle_down]]) (Value 9 : Look X)  (Value 10 : Look Y)">
+			<position y="-1"/>
+		</logic_node>
+		<logic_node label="Headset Audio" type="7">
+			<position x="-1" y="2" z="2"/>
+		</logic_node>
+		<logic_node label="Headset Audio" mode="1" type="7">
+			<position x="1" y="2" z="2"/>
+		</logic_node>
+		<logic_node orientation="0" label="Headset Video" mode="1" type="6" description="Displays video UI overlay on a helmet mounted display." flags="0">
+			<position x="1" y="2" z="2"/>
+		</logic_node>
+		<logic_node orientation="5" label="Fluid In" mode="1" type="3">
+			<position/>
+		</logic_node>
+	</logic_nodes>
+	<couplings/>
+	<voxels>
+		<voxel flags="2">
+			<position/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="-3" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="-3" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="-3" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="-2" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="-2" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="-2" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="-1" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="-1" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="-1" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="1" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="1" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="1" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="2" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="2" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="2" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="-4" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="-4" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="-4" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="2" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="2" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="2" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="-1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="-1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="-2" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="-2" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="-3" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="-3" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="-4" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="-4" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="-1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="-2" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="-3" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="-4" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="-1" y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="-1" y="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position y="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="1" y="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="1" y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+	</voxels>
+	<voxel_min x="-1" y="-4"/>
+	<voxel_max x="1" y="2" z="2"/>
+	<voxel_physics_min/>
+	<voxel_physics_max/>
+	<bb_physics_min x="-0.375" y="0.375" z="-0.375"/>
+	<bb_physics_max x="0.375" y="1.125" z="-0.3"/>
+	<compartment_sample_pos/>
+	<constraint_pos_parent/>
+	<constraint_pos_child/>
+	<voxel_location_child/>
+	<seat_offset y="-0.5" z="0.25"/>
+	<seat_front/>
+	<seat_up/>
+	<seat_camera y="-0.25"/>
+	<seat_render y="-0.3"/>
+	<force_dir/>
+	<light_position/>
+	<light_color x="1" y="1" z="1"/>
+	<light_forward/>
+	<door_size x="1" y="1" z="1"/>
+	<door_normal/>
+	<door_side/>
+	<door_up/>
+	<door_base_pos/>
+	<dynamic_body_position/>
+	<dynamic_rotation_axes y="1"/>
+	<dynamic_side_axis x="1"/>
+	<magnet_offset/>
+	<connector_axis/>
+	<connector_up/>
+	<jet_engine_connections_prev/>
+	<jet_engine_connections_next/>
+	<particle_direction/>
+	<particle_offset/>
+	<particle_bounds/>
+	<rope_hook_offset y="-0.3" z="0.15"/>
+</definition>
+
