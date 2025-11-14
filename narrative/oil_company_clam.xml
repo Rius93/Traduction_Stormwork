@@ -1,98 +1,79 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<meta type="2" max_spawned="1" is_repeatable="true"/>
-<definition_data vehicle_filename="oil_tanker.xml" vehicle_delivery_filename="rig_instrument.xml" rig_team_size="7" tanker_team_size="4" >
-	
-	<rig_evacuation 
-		desc_long="A fire has broken out on the Clam Ltd. rig. A full evacuation is necessary. Get the workers to the nearby hospital as quickly as possible." 
-		desc_short="Evacuate rig workers to safety." 
-		title="Clam Ltd. Evacuation" 
-		obj_1_text="Evacuate 4 workers" 
-		obj_2_text="Evacuate all 7 workers" 
-		obj_3_text="Evacuate all workers efficiently"
-		obj_1_count="4"
-		difficulty="5"
-		obj_1_time_mins="20"
-		obj_2_time_mins="15"
-		obj_3_time_mins="10"/>
-	
-	<rig_inspection 
-		desc_long="Collect the safety inspectors from the airport and transport them to the Clam Ltd. rig." 
-		desc_short="Transport safety inspectors to the Clam Ltd. rig." 
-		title="Clam Ltd. Rig Inspection" 
-		obj_1_text="Transport safety inspectors" 
-		obj_2_text="Transport safety inspectors" 
-		obj_3_text="Transport safety inspectors"/>
-	
-	<rig_inspection_alt 
-		desc_long="The inspectors have finished on the Clam Ltd. tanker. Get them to the rig for inspection phase 2." 
-		desc_short="Transport safety inspectors to the Clam Ltd. rig." 
-		title="Clam Ltd. Inspection Phase 2" 
-		obj_1_text="Transport safety inspectors" 
-		obj_2_text="Transport safety inspectors" 
-		obj_3_text="Transport safety inspectors"/>
-	
-	<rig_med_evac 
-		desc_long="Evacuate the injured Clam Ltd. rig worker to the nearest hospital." 
-		desc_short="Evacuate Clam Ltd. rig worker." 
-		title="Rig Worker Medevac" 
-		obj_1_text="Evacuate casualty" 
-		obj_2_text="Evacuate casualty" 
-		obj_3_text="Evacuate casualty"
-		obj_1_time_mins="20"
-		obj_2_time_mins="15"
-		obj_3_time_mins="10"/>
-	
-	<rig_deliver_parts 
-		desc_long="Collect the rig instruments from the nearby research base and deliver them to the Clam Ltd. rig." 
-		desc_short="Deliver equipment to the Clam Ltd. rig" 
-		title="Clam Ltd. Equipment Delivery"
-		obj_1_text="Deliver 1 rig instrument" 
-		obj_2_text="Deliver 2 rig instruments" 
-		obj_3_text="Deliver both rig instruments efficiently" 
-		obj_1_count="1" 
-		obj_2_count="2" 
-		obj_3_count="2"
-		obj_1_time_mins="120" 
-        obj_2_time_mins="120" 
-        obj_3_time_mins="60"
-		difficulty="3"/>
-	
-	<tanker_inspection 
-		desc_long="Collect the safety inspectors from the airport and transport them to the Clam Ltd. tanker." 
-		desc_short="Transport safety inspectors to the Clam Ltd. tanker." 
-		title="Clam Ltd. Safety Inspection" 
-		obj_1_text="Transport safety inspectors" 
-		obj_2_text="Transport safety inspectors" 
-		obj_3_text="Transport safety inspectors"/>
-	
-	<tanker_inspection_alt 
-		desc_long="The inspectors have finished on the Clam Ltd. rig. Get them to the tanker for inspection phase 2." 
-		desc_short="Transport safety inspectors to the Clam Ltd. tanker." 
-		title="Clam Ltd. Inspection Phase 2" 
-		obj_1_text="Transport safety inspectors" 
-		obj_2_text="Transport safety inspectors" 
-		obj_3_text="Transport safety inspectors"/>
-	
-	<tanker_evacuation 
-		desc_long="Evacuate the Clam Ltd. tanker crew and get them to the nearby hospital." 
-		desc_short="Evacuate tanker workers to safety." 
-		title="Clam Ltd. Tanker Evacuation" 
-		obj_1_text="Evacuate 2 workers" 
-		obj_2_text="Evacuate all 4 workers" 
-		obj_3_text="Evacuate all workers efficiently" 
-		obj_1_count="2"
-		difficulty="3"/>
-	
-	<tanker_tow 
-		desc_long="The Clam Ltd. tanker has broken down. Tow it back to their rig for a reward." 
-		desc_short="Tow the Clam Ltd. tanker to their rig." 
-		title="Tanker Tow" 
-		obj_1_text="Tow tanker to rig" 
-		obj_2_text="Tow tanker to rig" 
-		obj_3_text="Tow tanker to rig"
-		obj_1_time_mins="150" 
-        obj_2_time_mins="150" 
-        obj_3_time_mins="150"
-		difficulty="3"/>
-</definition_data>
+This XML defines a mission set for a game scenario involving a Clam Ltd. oil rig and tanker. Here’s a compact breakdown of each mission block and what its attributes mean:
 
+Top-level metadata:
+- `meta`:
+  - `type="2"`: Likely a mission pack/group type.
+  - `max_spawned="1"`: Only one mission of this type can be active at a time.
+  - `is_repeatable="true"`: Missions can be replayed.
+- `definition_data`:
+  - `vehicle_filename="oil_tanker.xml"`: Base ship/vehicle definition.
+  - `vehicle_delivery_filename="rig_instrument.xml"`: Item/vehicle used for delivery missions.
+  - `rig_team_size="7"`: Max rig crew.
+  - `tanker_team_size="4"`: Max tanker crew.
+
+Individual missions:
+
+1. `<rig_evacuation>`
+   - Title: “Clam Ltd. Evacuation”
+   - Long: Fire on the rig; full evacuation to nearby hospital.
+   - Objectives:
+     - Obj 1: “Evacuate 4 workers” within 20 mins (difficulty 5).
+     - Obj 2: “Evacuate all 7 workers” within 15 mins.
+     - Obj 3: “Evacuate all workers efficiently” within 10 mins.
+   - Uses `obj_1_count="4"`, implies full crew = 7 (from `rig_team_size`).
+
+2. `<rig_inspection>`
+   - Title: “Clam Ltd. Rig Inspection”
+   - Long: Pick up safety inspectors from the airport and take them to the rig.
+   - All three objective texts are identical: just transporting inspectors (likely single-step mission with no time/ count constraints specified here).
+
+3. `<rig_inspection_alt>`
+   - Title: “Clam Ltd. Inspection Phase 2”
+   - Long: Inspectors are currently on the tanker; transport them to the rig for phase 2.
+   - Same objective texts as `rig_inspection`; different starting location narrative.
+
+4. `<rig_med_evac>`
+   - Title: “Rig Worker Medevac”
+   - Long: Evacuate an injured rig worker to the nearest hospital.
+   - Objectives:
+     - All three: “Evacuate casualty”, with increasing time pressure:
+       - Obj 1: 20 mins
+       - Obj 2: 15 mins
+       - Obj 3: 10 mins
+
+5. `<rig_deliver_parts>`
+   - Title: “Clam Ltd. Equipment Delivery”
+   - Long: Collect rig instruments from a research base and deliver to the rig.
+   - Objectives:
+     - Obj 1: “Deliver 1 rig instrument” within 120 mins.
+     - Obj 2: “Deliver 2 rig instruments” within 120 mins.
+     - Obj 3: “Deliver both rig instruments efficiently” (2 instruments) within 60 mins.
+   - `difficulty="3"`.
+
+6. `<tanker_inspection>`
+   - Title: “Clam Ltd. Safety Inspection”
+   - Long: Collect safety inspectors from the airport and transport them to the tanker.
+   - Objectives: all just “Transport safety inspectors” (likely similar to `rig_inspection` but target is tanker).
+
+7. `<tanker_inspection_alt>`
+   - Title: “Clam Ltd. Inspection Phase 2”
+   - Long: Inspectors are on the rig; transport them to the tanker for phase 2.
+   - Same objective texts as the other inspection missions.
+
+8. `<tanker_evacuation>`
+   - Title: “Clam Ltd. Tanker Evacuation”
+   - Long: Evacuate tanker crew to the nearby hospital.
+   - Objectives:
+     - Obj 1: “Evacuate 2 workers” (with `obj_1_count="2"`).
+     - Obj 2: “Evacuate all 4 workers”.
+     - Obj 3: “Evacuate all workers efficiently”.
+   - `difficulty="3"`. No explicit time limits defined here.
+
+9. `<tanker_tow>`
+   - Title: “Tanker Tow”
+   - Long: Broken-down tanker must be towed back to the rig.
+   - Objectives: all “Tow tanker to rig”.
+   - Time: 150 mins for obj 1/2/3 (no escalating time pressure).
+   - `difficulty="3"`.
+
+If you tell me what you want to change (e.g., difficulty, times, counts, descriptions, or add/remove missions), I can rewrite this XML accordingly.
