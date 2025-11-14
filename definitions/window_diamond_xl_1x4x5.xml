@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition name="Window Diamond 1x4x5" category="15" type="9" mass="3" value="50" tags="basic" mesh_data_name="meshes/component_window_diamond_xl_1x4x5.mesh" constraint_axis="1" cable_length="16" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" wheel_radius="0.25" rudder_surface_area="0">
+	<tooltip_properties description="Skewed in all dimensions for building of angular windows." short_description="Basic window piece."/>
+	<sfx_datas/>
+	<surfaces>
+		<surface orientation="2">
+			<position x="2" y="2"/>
+		</surface>
+		<surface orientation="3">
+			<position x="-2" y="-1"/>
+		</surface>
+		<surface orientation="5">
+			<position x="-1" y="-1"/>
+		</surface>
+		<surface orientation="5">
+			<position/>
+		</surface>
+		<surface orientation="5">
+			<position x="1" y="1"/>
+		</surface>
+		<surface orientation="5">
+			<position x="2" y="2"/>
+		</surface>
+		<surface orientation="4">
+			<position x="1" y="2"/>
+		</surface>
+		<surface orientation="4">
+			<position y="1"/>
+		</surface>
+		<surface orientation="4">
+			<position x="-1"/>
+		</surface>
+		<surface orientation="4">
+			<position x="-2" y="-1"/>
+		</surface>
+	</surfaces>
+	<buoyancy_surfaces>
+		<surface orientation="1" rotation="2" shape="7">
+			<position x="-2" y="-1"/>
+		</surface>
+		<surface orientation="3" shape="7">
+			<position x="-1" y="-1"/>
+		</surface>
+		<surface orientation="1" rotation="2" shape="7">
+			<position x="-1"/>
+		</surface>
+		<surface orientation="3" shape="7">
+			<position/>
+		</surface>
+		<surface orientation="1" rotation="2" shape="7">
+			<position y="1"/>
+		</surface>
+		<surface orientation="3" shape="7">
+			<position x="1" y="1"/>
+		</surface>
+		<surface orientation="1" rotation="2" shape="7">
+			<position x="1" y="2"/>
+		</surface>
+		<surface orientation="3" shape="7">
+			<position x="2" y="2"/>
+		</surface>
+	</buoyancy_surfaces>
+	<logic_nodes/>
+	<couplings/>
+	<voxels>
+		<voxel flags="1" physics_shape="2">
+			<position x="-2" y="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1" physics_shape="3">
+			<position x="-1" y="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1" physics_shape="2">
+			<position x="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1" physics_shape="3">
+			<position/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1" physics_shape="2">
+			<position y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1" physics_shape="3">
+			<position x="1" y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1" physics_shape="2">
+			<position x="1" y="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1" physics_shape="3">
+			<position x="2" y="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+	</voxels>
+	<voxel_min x="-2" y="-1"/>
+	<voxel_max x="2" y="2"/>
+	<voxel_physics_min x="-2" y="-1"/>
+	<voxel_physics_max x="2" y="2"/>
+	<bb_physics_min/>
+	<bb_physics_max/>
+	<compartment_sample_pos/>
+	<constraint_pos_parent/>
+	<constraint_pos_child/>
+	<voxel_location_child/>
+	<seat_offset/>
+	<seat_front/>
+	<seat_up/>
+	<seat_camera/>
+	<seat_render/>
+	<force_dir/>
+	<light_position/>
+	<light_color x="1" y="1" z="1"/>
+	<light_forward/>
+	<door_size x="1" y="1" z="1"/>
+	<door_normal/>
+	<door_side/>
+	<door_up/>
+	<door_base_pos/>
+	<dynamic_body_position/>
+	<dynamic_rotation_axes y="1"/>
+	<dynamic_side_axis x="1"/>
+	<magnet_offset/>
+	<connector_axis/>
+	<connector_up/>
+	<jet_engine_connections_prev/>
+	<jet_engine_connections_next/>
+	<particle_direction/>
+	<particle_offset/>
+	<particle_bounds/>
+	<rope_hook_offset/>
+</definition>
+
