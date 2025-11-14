@@ -126,7 +126,7 @@
 	<magnet_offset/>
 	<connector_axis/>
 	<connector_up/>
-	<tooltip_properties description="Un intercooler qui égalise la chaleur entre l'air et un liquide à une vitesse proportionnelle à la taille du composant." short_description="Un échangeur de chaleur qui égalise la chaleur entre l'air et un liquide."/>
+	<tooltip_properties description="Un échangeur air-liquide qui égalise la température entre l'air et un liquide à une vitesse proportionnelle à la taille du composant." short_description="Un échangeur de chaleur qui égalise la température entre l'air et un liquide."/>
 	<jet_engine_connections_prev/>
 	<jet_engine_connections_next/>
 	<particle_direction/>
