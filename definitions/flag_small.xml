@@ -1,6 +1,9 @@
+Voici le fichier modifié avec les variables "description" et "short_description" traduites en français :
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<definition name="Flag (Small)" category="8" type="65" mass="1" value="25" mesh_data_name="meshes/component_flagpole_small.mesh" mesh_editor_only_name="meshes/arrow_flagpole_small.mesh" constraint_axis="1" max_motor_force="100" cable_length="16" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" wheel_radius="0.25" button_type="1" light_intensity="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" door_lower_limit="-1" door_upper_limit="1" dynamic_max_rotation="3.141593" magnet_force="1">
-	<tooltip_properties description="The flag design can be set in the properties menu." short_description="A small sized flagpole."/>
+<definition name="Drapeau (Petit)" category="8" type="65" mass="1" value="25" mesh_data_name="meshes/component_flagpole_small.mesh" mesh_editor_only_name="meshes/arrow_flagpole_small.mesh" constraint_axis="1" max_motor_force="100" cable_length="16" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" wheel_radius="0.25" button_type="1" light_intensity="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" door_lower_limit="-1" door_upper_limit="1" dynamic_max_rotation="3.141593" magnet_force="1">
+	<tooltip_properties description="La conception du drapeau peut être définie dans le menu des propriétés." short_description="Un petit poteau de drapeau."/>
 	<sfx_datas/>
 	<surfaces>
 		<surface orientation="3">
@@ -64,4 +67,4 @@
 	<particle_bounds/>
 	<rope_hook_offset/>
 </definition>
-
+```
