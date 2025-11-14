@@ -31,7 +31,7 @@
 			<position x="0" y="0" z="0"/>
 		</surface>
 		<surface orientation="5" rotation="0" shape="1" trans_type="0">
-			<position x="0" y="0" z="0"/>
+			<position x="0" y="1" z="0"/>
 		</surface>
 		<surface orientation="1" rotation="0" shape="1" trans_type="0">
 			<position x="0" y="0" z="0"/>
