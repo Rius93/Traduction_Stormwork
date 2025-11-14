@@ -203,7 +203,7 @@
 	<magnet_offset x="0" y="0" z="0"/>
 	<connector_axis x="0" y="1" z="0"/>
 	<connector_up x="1" y="0" z="0"/>
-	<tooltip_properties description="Components can be attached to all faces, with the exception of the triangular face. Pyramids can act as a corner-piece for perpendicular lines of wedge blocks." short_description="4x4 pyramid-shaped building block. "/>
+	<tooltip_properties description="Les composants peuvent être attachés à toutes les faces, à l’exception de la face triangulaire. Les pyramides peuvent servir de pièce d’angle pour des lignes perpendiculaires de blocs en pente." short_description="Bloc de construction en forme de pyramide 4x4."/>
 	<reward_properties number_rewarded="100"/>
 	<jet_engine_connections_prev/>
 	<jet_engine_connections_next/>
@@ -211,4 +211,3 @@
 	<particle_offset x="0" y="0" z="0"/>
 	<particle_bounds x="0.2" y="0.2" z="0.2"/>
 </definition>
-
