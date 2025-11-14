@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition name="Fluid Hose Pulley" category="4" type="48" mass="25" value="250" flags="532481" tags="basic" audio_filename_loop="audio/fx/servo_medium_loop.ogg" audio_gain="1" mesh_data_name="meshes/component_winch_pulley_a.mesh" cable_radius="0.05" cable_length="150" logic_gate_subtype="8">
+	<tooltip_properties description="Draw a rope logic link between two rope nodes to form a hose. Hoses will slide based on difference in force applied to each hose." short_description="A pulley that changes attached hose lengths based on forces applied to hoses."/>
+	<sfx_datas/>
+	<surfaces>
+		<surface orientation="1" shape="1">
+			<position x="-1"/>
+		</surface>
+		<surface shape="1">
+			<position x="1"/>
+		</surface>
+		<surface orientation="3">
+			<position x="-1"/>
+		</surface>
+		<surface orientation="3">
+			<position/>
+		</surface>
+		<surface orientation="3">
+			<position x="1"/>
+		</surface>
+		<surface orientation="3">
+			<position x="1" z="1"/>
+		</surface>
+		<surface orientation="3">
+			<position z="1"/>
+		</surface>
+		<surface orientation="3">
+			<position x="-1" z="1"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position x="-1" z="1"/>
+		</surface>
+		<surface orientation="1" rotation="2" shape="6">
+			<position x="-1" z="-1"/>
+		</surface>
+		<surface orientation="4">
+			<position x="-1" z="1"/>
+		</surface>
+		<surface orientation="4" shape="1">
+			<position z="1"/>
+		</surface>
+		<surface orientation="4">
+			<position x="1" z="1"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" z="1"/>
+		</surface>
+		<surface rotation="2" shape="6">
+			<position x="1" z="-1"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position z="-1"/>
+		</surface>
+		<surface orientation="3">
+			<position x="-1" z="-1"/>
+		</surface>
+		<surface orientation="3">
+			<position z="-1"/>
+		</surface>
+		<surface orientation="3">
+			<position x="1" z="-1"/>
+		</surface>
+		<surface orientation="2">
+			<position z="1"/>
+		</surface>
+		<surface orientation="2">
+			<position x="1" z="1"/>
+		</surface>
+		<surface orientation="2">
+			<position x="-1" z="1"/>
+		</surface>
+		<surface orientation="2">
+			<position x="-1"/>
+		</surface>
+		<surface orientation="2">
+			<position/>
+		</surface>
+		<surface orientation="2">
+			<position x="1"/>
+		</surface>
+		<surface orientation="2">
+			<position z="-1"/>
+		</surface>
+		<surface orientation="2">
+			<position x="-1" z="-1"/>
+		</surface>
+		<surface orientation="2">
+			<position x="1" z="-1"/>
+		</surface>
+	</surfaces>
+	<buoyancy_surfaces>
+		<surface shape="1">
+			<position x="1" z="1"/>
+		</surface>
+		<surface shape="1">
+			<position x="1"/>
+		</surface>
+		<surface orientation="4" shape="1">
+			<position x="1" z="1"/>
+		</surface>
+		<surface orientation="4" shape="1">
+			<position z="1"/>
+		</surface>
+		<surface orientation="4" shape="1">
+			<position x="-1" z="1"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position x="-1" z="1"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position x="-1"/>
+		</surface>
+		<surface shape="6">
+			<position x="-1" z="-1"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position z="-1"/>
+		</surface>
+		<surface rotation="2" shape="6">
+			<position x="1" z="-1"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position x="1"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position x="-1"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position x="-1" z="1"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position z="1"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position x="1" z="1"/>
+		</surface>
+		<surface orientation="2" rotation="1" shape="2">
+			<position x="1" z="-1"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position z="-1"/>
+		</surface>
+		<surface orientation="2" rotation="2" shape="2">
+			<position x="-1" z="-1"/>
+		</surface>
+		<surface orientation="3" rotation="1" shape="2">
+			<position x="-1" z="-1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position z="-1"/>
+		</surface>
+		<surface orientation="3" rotation="2" shape="2">
+			<position x="1" z="-1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position x="1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position x="-1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position x="-1" z="1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position z="1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position x="1" z="1"/>
+		</surface>
+	</buoyancy_surfaces>
+	<logic_nodes>
+		<logic_node label="Rope 1 Length" type="1" description="The current length of rope 1 in metres.">
+			<position x="1"/>
+		</logic_node>
+		<logic_node label="Rope 2 Length" type="1" description="The current length of rope 2 in metres.">
+			<position x="-1"/>
+		</logic_node>
+		<logic_node orientation="4" label="Rope 2" mode="1" type="8">
+			<position x="-1" z="1"/>
+		</logic_node>
+		<logic_node orientation="4" label="Rope 1" mode="1" type="8">
+			<position x="1" z="1"/>
+		</logic_node>
+		<logic_node orientation="4" label="Fluid Node 1" type="3">
+			<position/>
+		</logic_node>
+		<logic_node orientation="4" label="Fluid Node 2" type="3">
+			<position/>
+		</logic_node>
+	</logic_nodes>
+	<couplings/>
+	<voxels>
+		<voxel flags="1">
+			<position/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+	</voxels>
+	<voxel_min x="-1" z="-1"/>
+	<voxel_max x="1" z="1"/>
+	<voxel_physics_min x="-1" z="-1"/>
+	<voxel_physics_max x="1" z="1"/>
+	<bb_physics_min/>
+	<bb_physics_max/>
+	<compartment_sample_pos/>
+	<constraint_pos_parent/>
+	<constraint_pos_child z="-0.125"/>
+	<voxel_location_child y="3" z="2"/>
+	<seat_offset/>
+	<seat_front/>
+	<seat_up/>
+	<seat_camera/>
+	<seat_render/>
+	<force_dir/>
+	<light_position/>
+	<light_color x="1" y="1" z="1"/>
+	<light_forward/>
+	<door_size x="1" y="1" z="1"/>
+	<door_normal/>
+	<door_side/>
+	<door_up/>
+	<door_base_pos/>
+	<dynamic_body_position/>
+	<dynamic_rotation_axes y="1"/>
+	<dynamic_side_axis x="1"/>
+	<magnet_offset/>
+	<connector_axis/>
+	<connector_up/>
+	<jet_engine_connections_prev/>
+	<jet_engine_connections_next/>
+	<particle_direction/>
+	<particle_offset/>
+	<particle_bounds/>
+	<rope_hook_offset/>
+</definition>
+
