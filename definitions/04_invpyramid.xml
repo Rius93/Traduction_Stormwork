@@ -70,8 +70,7 @@
 	<dynamic_rotation_axes x="0" y="1" z="0"/>
 	<dynamic_side_axis x="1" y="0" z="0"/>
 	<magnet_offset x="0" y="0" z="0"/>
-	<tooltip_properties description="Components can be attached to all faces, with the exception of the triangular face. Inverse pyramids are useful for closing gaps between perpendicular lines of wedge and pyramid blocks." short_description="Basic inverse pyramid-shaped building block."/>
+	<tooltip_properties description="Les composants peuvent être fixés sur toutes les faces, à l’exception de la face triangulaire. Les pyramides inversées sont utiles pour combler les écarts entre des rangées perpendiculaires de blocs en pente (wedge) et de blocs en forme de pyramide." short_description="Bloc de construction basique en forme de pyramide inversée."/>
 	<reward_properties number_rewarded="100"/>
 	<seat_exit_position x="0" y="0" z="0"/>
 </definition>
-
