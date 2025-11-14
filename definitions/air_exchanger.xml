@@ -1,3 +1,5 @@
+Voici le fichier modifié avec la traduction des variables "description" et "short_description" :
+
 <?xml version="1.0" encoding="UTF-8"?>
 <definition name="Air-Liquid Heat Exchanger 1x2" category="9" type="24" mass="2" value="15" mesh_data_name="meshes/modular_engine_ship_intercooler_1x2.mesh" constraint_axis="1" max_motor_force="100" max_motor_speed="10" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" wheel_radius="0.25" button_type="1" light_intensity="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" door_lower_limit="-1" door_upper_limit="1" dynamic_max_rotation="3.141593" magnet_force="1" pump_pressure="0.01" water_component_type="18">
     <sfx_datas/>
@@ -66,24 +68,20 @@
         </surface>
     </buoyancy_surfaces>
     <logic_nodes>
-        <logic_node orientation="5" label="Air In" mode="1" type="3" description="Input air port.">
+        <logic_node orientation="5" label="Air In" mode="1" type="3" description="Entrée du port d'air.">
             <position/>
         </logic_node>
-        <logic_node orientation="4" label="Air Out" mode="1" type="3" description="Output air port.">
+        <logic_node orientation="4" label="Air Out" mode="1" type="3" description="Sortie du port d'air.">
             <position z="1"/>
         </logic_node>
-        <logic_node orientation="2" label="Fluid In" mode="1" type="3" description="Input fluid port.">
+        <logic_node orientation="2" label="Fluid In" mode="1" type="3" description="Entrée du port du fluide.">
             <position/>
         </logic_node>
-        <logic_node orientation="2" label="Fluid Out" mode="1" type="3" description="Output fluid port.">
+        <logic_node orientation="2" label="Fluid Out" mode="1" type="3" description="Sortie du port du fluide.">
             <position z="1"/>
         </logic_node>
-        <logic_node label="Temp A" type="1" description="Compartment air temperature.">
-            <position/>
-        </logic_node>
-        <logic_node label="Temp B" type="1" description="Compartment water temperature.">
-            <position z="1"/>
-        </logic_node>
+        <logic_node label="Temp A" type="1" description="Température de l'air dans la chambre."]
+        <logic_node label="Temp B" type="1" description="Température de l'eau dans la chambre."]
     </logic_nodes>
     <couplings/>
     <voxels>
@@ -126,7 +124,7 @@
     <magnet_offset/>
     <connector_axis/>
     <connector_up/>
-    <tooltip_properties description="Un échangeur air-liquide qui égalise la température entre l'air et un liquide à une vitesse proportionnelle à la taille du composant." short_description="Un échangeur de chaleur qui égalise la température entre l'air et un liquide."/>
+    <tooltip_properties description="Un échangeur qui égalise la température entre l'air et un liquide à une vitesse proportionnelle à la taille du composant." short_description="Un échangeur de chaleur qui égalise la température entre l'air et un liquide."/>
     <jet_engine_connections_prev/>
     <jet_engine_connections_next/>
     <particle_direction/>
