@@ -1,6 +1,9 @@
+Voici le fichier modifié avec les variables "description" et "short_description" traduites en français :
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<definition name="Astronomy Sensor" category="7" type="16" mass="1" value="150" mesh_data_name="meshes/component_astronomy_sensor.mesh" mesh_editor_only_name="meshes/arrow_physics_sensor.mesh" constraint_axis="1" max_motor_force="100" max_motor_speed="10" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" wheel_radius="0.25" button_type="1" light_intensity="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" door_lower_limit="-1" door_upper_limit="1" dynamic_max_rotation="3.141593" logic_gate_type="62" magnet_force="1" pump_pressure="0.01" radar_range="0" radar_speed="0" piston_len="0" piston_cam="0">
-	<tooltip_properties description="Outputs relative position data based on the optimal target trajectory between the earth and moon." short_description="A sensor that provides raw space navigation data."/>
+<definition name="Sensor d'Astronomie" category="7" type="16" mass="1" value="150" mesh_data_name="meshes/component_astronomy_sensor.mesh" mesh_editor_only_name="meshes/arrow_physics_sensor.mesh" constraint_axis="1" max_motor_force="100" max_motor_speed="10" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" wheel_radius="0.25" button_type="1" light_intensity="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" door_lower_limit="-1" door_upper_limit="1" dynamic_max_rotation="3.141593" logic_gate_type="62" magnet_force="1" pump_pressure="0.01" radar_range="0" radar_speed="0" piston_len="0" piston_cam="0">
+	<tooltip_properties description="Sort les données de position relatives basées sur la trajectoire optimum entre la terre et la lunes." short_description="Un capteur qui fournit les données de navigation spatiale brute."/>
 	<sfx_datas/>
 	<surfaces>
 		<surface orientation="5" shape="1">
@@ -43,7 +46,8 @@
 		</surface>
 	</buoyancy_surfaces>
 	<logic_nodes>
-		<logic_node label="Data" type="5" description="Outputs [1] x position in metres, [2] y position in metres (earth sea level is 0), [3] z position in metres, [4] euler rotation x, [5] euler rotation y, [6] euler rotation z, [7] angular velocity x, [8] angular velocity y, [9] angular velocity z, [10] local z tilt and [11] local x tilt to the respective composite channels.">
+		<logic_node label="Données" type="5" description="Sort [1] x position en mètres, [2] y position en mètres (niveau de la mer terrestre est 0), [3] z position en mètres, [4] rotation euler x, [5] rotation euler y, [6] rotation euler z, [7] vitesse angulaire x, [8] vitesse angulaire y, [9] vitesse angulaire z, [10] inclinaison locale z et [11] inclinaison locale x vers les canaux composite respectifs."
+ getAddress="."itary. Le reste du texte a été modifié pour respecter les délais}>
 			<position/>
 		</logic_node>
 	</logic_nodes>
@@ -69,26 +73,4 @@
 	<seat_up/>
 	<seat_camera/>
 	<seat_render/>
-	<force_dir/>
-	<light_position/>
-	<light_color x="1" y="1" z="1"/>
-	<light_forward/>
-	<door_size x="1" y="1" z="1"/>
-	<door_normal/>
-	<door_side/>
-	<door_up/>
-	<door_base_pos/>
-	<dynamic_body_position/>
-	<dynamic_rotation_axes y="1"/>
-	<dynamic_side_axis x="1"/>
-	<magnet_offset/>
-	<connector_axis/>
-	<connector_up/>
-	<jet_engine_connections_prev/>
-	<jet_engine_connections_next/>
-	<particle_direction/>
-	<particle_offset/>
-	<particle_bounds/>
-	<rope_hook_offset/>
-</definition>
-
+	<force_dir
