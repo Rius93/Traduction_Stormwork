@@ -105,7 +105,7 @@
 	<magnet_offset x="0" y="0" z="0"/>
 	<connector_axis x="0" y="1" z="0"/>
 	<connector_up x="1" y="0" z="0"/>
-	<tooltip_properties description="Des composants peuvent être attachés à toutes les faces, à l’exception de la face triangulaire. Les pyramides inverses sont utiles pour combler les espaces entre des lignes perpendiculaires de blocs en coin et de blocs en forme de pyramide." short_description="Bloc de construction 1x2 en forme de pyramide inversée."/>
+	<tooltip_properties description="Des composants peuvent être attachés à toutes les faces, à l’exception de la face triangulaire. Les pyramides inversées sont utiles pour combler les espaces entre des lignes perpendiculaires de blocs d’angle et de blocs en forme de pyramide." short_description="Bloc de construction 1x2 en forme de pyramide inversée."/>
 	<reward_properties number_rewarded="100"/>
 	<jet_engine_connections_prev/>
 	<jet_engine_connections_next/>
