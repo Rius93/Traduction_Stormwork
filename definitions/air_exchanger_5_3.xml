@@ -1,1 +1,3 @@
-<tooltip_properties description="Un intercooler qui égalise la chaleur entre l’air et un liquide à une vitesse proportionnelle à la taille du composant." short_description="Un échangeur de chaleur qui égalise la chaleur entre l’air et un liquide."/>
+<tooltip_properties description="Un intercooler qui égalise la chaleur entre l'air et un liquide à une vitesse proportionnelle à la taille du composant." short_description="Un échangeur de chaleur qui égalise la chaleur entre l'air et un liquide."/>
+
+(Je n'ai modifié que les variables "description" et "short_description", tout le reste du fichier reste inchangé)
