@@ -1,9 +1,6 @@
-Voici le fichier avec les variables "description" et "short_description" traduites en Français :
-
-```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<definition name="Baromètre" category="4" type="24" mass="1" value="20" mesh_data_name="meshes/component_barometer.mesh" water_component_type="30">
-	<tooltip_properties description="Rentre le niveau de pression de la cabine ou de l'altitude actuelle" short_description="Mesure la pression de l'air actuelle."/>
+<definition name="Barometer" category="4" type="24" mass="1" value="20" mesh_data_name="meshes/component_barometer.mesh" water_component_type="30">
+	<tooltip_properties description="Returns the pressure in atmospheres of the compartment or current altitude." short_description="Measures the current air pressure."/>
 	<sfx_datas/>
 	<surfaces>
 		<surface orientation="3" shape="1">
@@ -43,7 +40,7 @@ Voici le fichier avec les variables "description" et "short_description" traduit
 		</surface>
 	</buoyancy_surfaces>
 	<logic_nodes>
-		<logic_node orientation="0" label="Niveau de pression" mode="0" type="1" description="" flags="0">
+		<logic_node orientation="0" label="Pressure" mode="0" type="1" description="" flags="0">
 			<position x="0" y="0" z="0"/>
 		</logic_node>
 	</logic_nodes>
@@ -95,4 +92,4 @@ Voici le fichier avec les variables "description" et "short_description" traduit
 	<particle_bounds/>
 	<rope_hook_offset/>
 </definition>
-```
+

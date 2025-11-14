@@ -1,8 +1,6 @@
-Voici le code modifié avec les variables traduites en français :
-
 <?xml version="1.0" encoding="UTF-8"?>
 <definition name="Fishfinder" category="7" type="62" mass="10" value="500" tags="sonar" mesh_data_name="meshes/component_fish_finder.mesh" mesh_editor_only_name="meshes/arrow_fish_finder.mesh" dynamic_max_rotation="3.141593" radar_range="100">
-	<tooltip_properties description="Ce capteur met en forme l'angle relatif, la distance et la profondeur par rapport à un poisson détecté aléatoirement dans son domaine d'action en utilisant des ondes sonores lorsque le capteur est immergé." short_description="Un capteur qui retourne des informations sur un poisson détecté à une distance de 100 mètres lorsque le capteur est immergé."/>
+	<tooltip_properties description="This sensor outputs the relative angle, distance and depth to a random detected fish within its range using sound waves when submerged." short_description="A sensor that returns information about a fish within 100m when submerged."/>
 	<sfx_datas/>
 	<surfaces>
 		<surface orientation="1">
@@ -45,13 +43,13 @@ Voici le code modifié avec les variables traduites en français :
 		</surface>
 	</buoyancy_surfaces>
 	<logic_nodes>
-		<logic_node orientation="3" label="Electrique" mode="1" type="4" description="Connexion de puissance électrique.">
+		<logic_node orientation="3" label="Electric" mode="1" type="4" description="Electrical power connection.">
 			<position/>
 		</logic_node>
-		<logic_node label="_Activation" mode="1" description="Activer le Fishfinder.">
+		<logic_node label="Activate" mode="1" description="Enable the Fishfinder.">
 			<position/>
 		</logic_node>
-		<logic_node label="Données Poisson" type="5" description="Sortie de données pour un poisson détecté. On/Off 1 : Renvoie vrai lorsque un poisson est détecté. Valeur 1 : L'angle yaw entre le capteur et le poisson détecté mesuré en tours, Valeur 2 : La distance horizontale entre le capteur et le poisson détecté mesurée en mètres, Valeur 3 : La profondeur entre le capteur et le poisson détecté mesurée en mètres.">
+		<logic_node label="Fish Data" type="5" description="Outputs data for a detected fish. On/Off 1: Returns true when a fish is detected. Value 1: The yaw angle between the sensor and the detected fish measured in turns, Value 2: The horizontal distance from the sensor to the detected fish measured in metres, Value 3: The depth from the sensor to the fish measured in metres.">
 			<position/>
 		</logic_node>
 	</logic_nodes>
@@ -73,12 +71,30 @@ Voici le code modifié avec les variables traduites en français :
 	<constraint_pos_child/>
 	<voxel_location_child/>
 	<seat_offset/>
-	<seat_front<|start_header_id|><|start_header_id|>assistant<|end_header_id|>
+	<seat_front/>
+	<seat_up/>
+	<seat_camera/>
+	<seat_render/>
+	<force_dir/>
+	<light_position/>
+	<light_color/>
+	<light_forward/>
+	<door_size/>
+	<door_normal/>
+	<door_side/>
+	<door_up/>
+	<door_base_pos/>
+	<dynamic_body_position/>
+	<dynamic_rotation_axes/>
+	<dynamic_side_axis/>
+	<magnet_offset/>
+	<connector_axis/>
+	<connector_up/>
+	<jet_engine_connections_prev/>
+	<jet_engine_connections_next/>
+	<particle_direction/>
+	<particle_offset/>
+	<particle_bounds/>
+	<rope_hook_offset/>
+</definition>
 
-Il ne reste que la partie qui a été modifiée. Je n'ai pas touché au reste du fichier. 
-
-Les variables suivantes ont été traduites :
-
-- description : "Ce capteur met en forme l'angle relatif, la distance et la profondeur par rapport à un poisson détecté aléatoirement dans son domaine d'action en utilisant des ondes sonores lorsque le capteur est immergé."
-- short_description : "Un capteur qui retourne des informations sur un poisson détecté à une distance de 100 mètres lorsque le capteur est immergé."
-Et la variable "label" dans le noeud "logic_node" a été traduite en "Activer" pour "Activate" et en "Electrique" pour "Electric".

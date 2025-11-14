@@ -1,5 +1,3 @@
-Voici le fichier modifié avec les traductions de las variables "description" et "short_description" :
-
 <?xml version="1.0" encoding="UTF-8"?>
 <definition name="Cryo Cooler" category="9" type="24" mass="4" value="30" mesh_data_name="meshes/component_cryo_heat_exchanger.mesh" pump_pressure="0.01" water_component_type="33">
 	<sfx_datas/>
@@ -104,28 +102,28 @@ Voici le fichier modifié avec les traductions de las variables "description" et
 		</surface>
 	</buoyancy_surfaces>
 	<logic_nodes>
-		<logic_node orientation="2" label="Liquid A In" mode="1" type="3" description="Port d'entrée pour le liquide A qui sera réfrigéré.">
+		<logic_node orientation="2" label="Liquid A In" mode="1" type="3" description="Input liquid port for liquid that gets cooled.">
 			<position y="1" z="-1"/>
 		</logic_node>
-		<logic_node orientation="3" label="Liquid A Out" mode="1" type="3" description="Port de sortie pour le liquide A réfrigéré.">
+		<logic_node orientation="3" label="Liquid A Out" mode="1" type="3" description="Output liquid port for liquid that gets cooled.">
 			<position z="-1"/>
 		</logic_node>
-		<logic_node orientation="2" label="Liquid B In" mode="1" type="3" description="Port d'entrée pour le liquide B qui sera chauffé.">
+		<logic_node orientation="2" label="Liquid B In" mode="1" type="3" description="Input liquid port for liquid that gets warmed.">
 			<position y="1"/>
 		</logic_node>
-		<logic_node orientation="3" label="Liquid B Out" mode="1" type="3" description="Port de sortie pour le liquide B chauffé.">
+		<logic_node orientation="3" label="Liquid B Out" mode="1" type="3" description="Output liquid port for liquid that gets warmed.">
 			<position/>
 		</logic_node>
-		<logic_node label="Temp A" type="1" description="Température du compartiment.">
+		<logic_node label="Temp A" type="1" description="Compartment temperature.">
 			<position y="1" z="-1"/>
 		</logic_node>
-		<logic_node label="Temp B" type="1" description="Température du compartiment.">
+		<logic_node label="Temp B" type="1" description="Compartment temperature.">
 			<position y="1"/>
 		</logic_node>
-        <logic_node label="Electric" mode="1" type="4" description="Connexion d'alimentation électrique.">
+        <logic_node label="Electric" mode="1" type="4" description="Electrical power connection.">
 			<position/>
 		</logic_node>
-		<logic_node orientation="0" label="On/Off" mode="1" type="0" description="Contrôle de fonctionnement actif/arrêt du composant." flags="0">
+		<logic_node orientation="0" label="On/Off" mode="1" type="0" description="Controls whether or not the component transfers heat between liquids." flags="0">
 			<position/>
 		</logic_node>
 	</logic_nodes>
@@ -178,7 +176,7 @@ Voici le fichier modifié avec les traductions de las variables "description" et
 	<magnet_offset/>
 	<connector_axis/>
 	<connector_up/>
-	<tooltip_properties description="Un composant qui réfrigère le liquide A et transfère la chaleur au liquide B." short_description="Un composant équipé qui crée une différence de température entre deux systèmes liquides."/>
+	<tooltip_properties description="A component that cools liquid A and transfers the heat to liquid B." short_description="A powered component that creates a temperature difference between two liquid systems."/>
 	<jet_engine_connections_prev/>
 	<jet_engine_connections_next/>
 	<particle_direction/>

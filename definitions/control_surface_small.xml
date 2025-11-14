@@ -1,8 +1,5 @@
-Voici le fichier modifié avec les variables "description" et "short_description" traduites :
-
-```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<definition name="Surface de commande (Petit)" category="1" type="18" mass="10" value="150" tags="avion,avion de ligne,base" mesh_data_name="meshes/component_control_surface_small_base.mesh" mesh_0_name="meshes/component_control_surface_small_surface.mesh" mesh_editor_only_name="meshes/arrow_rudder_surface.mesh" constraint_axis="1" cable_radius="0" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" wheel_radius="0.25" button_type="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" dynamic_min_rotation="-0.785398" dynamic_max_rotation="0.785398" rudder_surface_area="10" rudder_type="0">
+<definition name="Control Surface (Small)" category="1" type="18" mass="10" value="150" tags="airplane,aeroplane,basic" mesh_data_name="meshes/component_control_surface_small_base.mesh" mesh_0_name="meshes/component_control_surface_small_surface.mesh" mesh_editor_only_name="meshes/arrow_rudder_surface.mesh" constraint_axis="1" cable_radius="0" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" wheel_radius="0.25" button_type="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" dynamic_min_rotation="-0.785398" dynamic_max_rotation="0.785398" rudder_surface_area="10" rudder_type="0">
 	<sfx_datas/>
 	<surfaces>
 		<surface orientation="3" shape="1">
@@ -51,10 +48,10 @@ Voici le fichier modifié avec les variables "description" et "short_description
 		</surface>
 	</buoyancy_surfaces>
 	<logic_nodes>
-		<logic_node label="Rotation" mode="1" type="1" description="Accepte une valeur comprise entre -1 et 1 qui représentent les deux extrêmes de la rotation du gouvernail." >
+		<logic_node label="Rotation" mode="1" type="1" description="Accepts a value between -1 and 1 that represent the two extremes of the rudder's rotation.">
 			<position z="1"/>
 		</logic_node>
-		<logic_node label="Électrique" mode="1" type="4" description="Liaison électrique.">
+		<logic_node label="Electric" mode="1" type="4" description="Electrical power connection.">
 			<position/>
 		</logic_node>
 	</logic_nodes>
@@ -175,7 +172,7 @@ Voici le fichier modifié avec les variables "description" et "short_description
 	<magnet_offset/>
 	<connector_axis/>
 	<connector_up/>
-	<tooltip_properties description="La surface de commande accepte une valeur entre -1 et 1 qui représentent les deux extrêmes de la rotation du gouvernail." short_description="La surface de commande peut être attelée à une surface de l'appareil pour appliquer une force lors du fait de l'air ou de l'eau."/>
+	<tooltip_properties description="It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation." short_description="The control surface can be attached to a surface of the vehicle to apply force as air or water is flowing over it."/>
 	<jet_engine_connections_prev/>
 	<jet_engine_connections_next/>
 	<particle_direction/>
@@ -183,9 +180,4 @@ Voici le fichier modifié avec les variables "description" et "short_description
 	<particle_bounds/>
 	<rope_hook_offset/>
 </definition>
-```
 
-J'ai remplacé :
-
-* "It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation." par "La surface de commande accepte une valeur entre -1 et 1 qui représentent les deux extrêmes de la rotation du gouvernail."
-* "The control surface can be attached to a surface of the vehicle to apply force as air or water is flowing over it." par "La surface de commande peut être attelée à une surface de l'appareil pour appliquer une force lors du fait de l'air ou de l'eau."

@@ -1,8 +1,6 @@
-Voici le fichier modifié avec les variables description et short_description traduites:
-
 <?xml version="1.0" encoding="UTF-8"?>
 <definition name="Camera Small" category="4" type="42" mass="5" value="1000" flags="2147753984" mesh_0_name="meshes/component_camera.mesh" mesh_editor_only_name="meshes/arrow_camera_small_gimbal.mesh" constraint_axis="1" max_motor_force="100" max_motor_speed="10" cable_radius="16" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" wheel_radius="0.25" button_type="1" light_intensity="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" door_lower_limit="-1" door_upper_limit="1" dynamic_max_rotation="3.141593" magnet_force="1" pump_pressure="0.01">
-	<tooltip_properties description="Ce frais de camera peut pivoter jusqu'à des demi-tours en utilisant les entrées composites." short_description="Une camera avec sortie de vidéo."/>
+	<tooltip_properties description="Can be pivoted up to 0.125 turns using composite input." short_description="A camera with video output feed."/>
 	<sfx_datas/>
 	<surfaces>
 		<surface orientation="3" shape="1">
@@ -48,7 +46,7 @@ Voici le fichier modifié avec les variables description et short_description tr
 		<logic_node label="Electric" mode="1" type="4">
 			<position/>
 		</logic_node>
-		<logic_node label="Pivot" mode="1" type="5" description="Entrées pour pivot de camera X/Y. (Valeur 1 : Pivot X) (Valeur 2 : Pivot Y)">
+		<logic_node label="Pivot" mode="1" type="5" description="Inputs for camera X/Y pivot. (Value 1 : Pivot X) (Value 2 : Pivot Y)">
 			<position/>
 		</logic_node>
 	</logic_nodes>
@@ -96,3 +94,4 @@ Voici le fichier modifié avec les variables description et short_description tr
 	<particle_bounds/>
 	<rope_hook_offset/>
 </definition>
+
