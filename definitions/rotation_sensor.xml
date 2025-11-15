@@ -65,7 +65,6 @@
 	<dynamic_rotation_axes x="0.000000" y="1.000000" z="0.000000"/>
 	<dynamic_side_axis x="1.000000" y="0.000000" z="0.000000"/>
 	<magnet_offset x="0.000000" y="0.000000" z="0.000000"/>
-	<tooltip_properties description="The measurement is expressed in terms of turns, with an output range of -0.25 to 0.25 turns. A value of zero points towards the horizon." short_description="A sensor that measures how much it has tilted, relative to the horizon."/>
+	<tooltip_properties description="La mesure est exprimée en nombre de tours, avec une plage de sortie de -0.25 à 0.25 tour. Une valeur de zéro pointe vers l'horizon." short_description="Un capteur qui mesure son inclinaison par rapport à l'horizon."/>
 	<reward_properties number_rewarded="6"/>
 </definition>
-
