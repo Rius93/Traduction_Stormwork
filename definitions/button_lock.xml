@@ -82,7 +82,6 @@
 	<dynamic_rotation_axes x="0.000000" y="1.000000" z="0.000000"/>
 	<dynamic_side_axis x="1.000000" y="0.000000" z="0.000000"/>
 	<magnet_offset x="0.000000" y="0.000000" z="0.000000"/>
-	<tooltip_properties description="An on signal must be sent to the button's unlock node to allow player interaction. The button's default state can be configured by selecting it with the select component." short_description="A toggle button that can only be interacted with when unlocked."/>
+	<tooltip_properties description="Un signal actif doit être envoyé au nœud de déverrouillage du bouton pour permettre l'interaction du joueur. L'état par défaut du bouton peut être configuré en le sélectionnant avec le composant de sélection." short_description="Un bouton à bascule avec lequel on ne peut interagir que lorsqu'il est déverrouillé."/>
 	<reward_properties number_rewarded="5"/>
 </definition>
-
