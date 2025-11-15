@@ -72,7 +72,6 @@
 	<dynamic_rotation_axes x="0.000000" y="1.000000" z="0.000000"/>
 	<dynamic_side_axis x="1.000000" y="0.000000" z="0.000000"/>
 	<magnet_offset x="0.000000" y="0.000000" z="0.000000"/>
-	<tooltip_properties description="The reading can be read from the sensor's number output and is measured in metres (1 metre = 4 blocks)." short_description="A laser distance sensor with a maximum measurement range of 500m."/>
+	<tooltip_properties description="La mesure peut être lue sur la sortie numérique du capteur et est exprimée en mètres (1 mètre = 4 blocs)." short_description="Un capteur de distance laser avec une portée de mesure maximale de 500 m."/>
 	<reward_properties number_rewarded="6"/>
 </definition>
-
