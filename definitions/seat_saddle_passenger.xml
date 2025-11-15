@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition name="Saddle Passenger Seat" category="4" type="1" mass="3" value="25" flags="8192" tags="basic,seat" mesh_data_name="meshes/component_seat_saddle_passenger.mesh" cable_radius="0" cable_length="16" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" rudder_surface_area="0">
-	<tooltip_properties description="You can get in and out of the seat by interacting with it using [$[action_use_seat]]. You can place a rescued survivor in any seat by using [$[action_use_seat]] while carrying them." short_description="A small padded passenger seat."/>
+	<tooltip_properties description="Vous pouvez vous installer et quitter ce siège en interagissant avec lui à l'aide de [$[action_use_seat]]. Vous pouvez placer un survivant secouru sur n'importe quel siège en utilisant [$[action_use_seat]] tout en le portant." short_description="Un petit siège passager rembourré"/>
 	<sfx_datas/>
 	<surfaces>
 		<surface orientation="3">
@@ -159,4 +159,3 @@
 	<particle_bounds/>
 	<rope_hook_offset/>
 </definition>
-
