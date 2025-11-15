@@ -154,7 +154,7 @@
 	<magnet_offset x="0" y="0" z="0"/>
 	<connector_axis x="0" y="1" z="0"/>
 	<connector_up x="1" y="0" z="0"/>
-	<tooltip_properties description="Corner windows are triangular in shape, making them useful for creating corners between angled windows." short_description="Basic window piece."/>
+	<tooltip_properties description="Les fenêtres d'angle sont de forme triangulaire, idéales pour créer des coins entre des fenêtres inclinées." short_description="Élément de fenêtre de base."/>
 	<jet_engine_connections_prev/>
 	<jet_engine_connections_next/>
 	<particle_direction x="0" y="1" z="0"/>
@@ -162,4 +162,3 @@
 	<particle_bounds x="0.2" y="0.2" z="0.2"/>
 	<rope_hook_offset x="0" y="0" z="0"/>
 </definition>
-
