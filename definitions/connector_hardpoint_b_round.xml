@@ -111,7 +111,7 @@
 	<magnet_offset x="0" y="1" z="0"/>
 	<connector_axis x="0" y="1" z="0"/>
 	<connector_up x="1" y="0" z="0"/>
-	<tooltip_properties description="A hardpoint body will connect to a hardpoint attachment when correctly aligned, fixing the two components in place while transferring logic and fluid." short_description="A hardpoint connector for building detachable vehicle sections."/>
+	<tooltip_properties description="Un corps de point d'attache se connecte à un accessoire de point d'attache lorsqu'ils sont correctement alignés, fixant les deux composants en place tout en transférant les signaux logiques et le fluide." short_description="Un connecteur de point d'attache pour construire des sections de véhicule détachables."/>
 	<jet_engine_connections_prev/>
 	<jet_engine_connections_next/>
 	<particle_direction x="0" y="1" z="0"/>
@@ -119,4 +119,3 @@
 	<particle_bounds x="0.2" y="0.2" z="0.2"/>
 	<rope_hook_offset x="0" y="0" z="0"/>
 </definition>
-
