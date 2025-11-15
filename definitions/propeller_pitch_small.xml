@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition name="Small Pitchable Propeller" category="3" type="2" mass="10" value="75" flags="7" tags="boat,basic" audio_filename_loop="audio/fx/propeller_small.ogg" audio_gain="1" mesh_data_name="meshes/component_variable_pitch_propeller_small.mesh" mesh_1_name="meshes/component_variable_pitch_propeller_blade_small.mesh" mesh_editor_only_name="meshes/arrow_propeller.mesh" constraint_axis="1" cable_radius="0" cable_length="16" seat_health_per_sec="1" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="20000" force_emitter_blade_height="0.035" force_emitter_blade_physics_length="0.27" force_emitter_blade_efficiency="0.075" engine_max_force="1000" wheel_radius="0.25" button_type="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" door_lower_limit="-1" door_upper_limit="1" dynamic_max_rotation="3.141593" rudder_surface_area="0" particle_speed="0.06">
-	<tooltip_properties description="A standard number input controls the propeller's hub, allowing you to affect its pitch. Power received from an engine affects forward and backward force generated. This propeller will only operate underwater." short_description="A small boat propeller with controllable pitch."/>
+	<tooltip_properties description="Une entrée numérique standard contrôle le moyeu de l'hélice, ce qui vous permet d'en modifier le pas. La puissance reçue d'un moteur influence la force générée en marche avant et arrière. Cette hélice ne fonctionne que sous l'eau." short_description="Une petite hélice de bateau à pas variable."/>
 	<sfx_datas>
 		<sfx_data sfx_name="high" sfx_range_inner="10" sfx_range_outer="50" sfx_priority="1">
 			<sfx_layers>
@@ -108,4 +108,3 @@
 	<particle_bounds x="0.55" y="0.25" z="0.55"/>
 	<rope_hook_offset/>
 </definition>
-
