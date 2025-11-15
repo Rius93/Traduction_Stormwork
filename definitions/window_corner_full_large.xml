@@ -154,7 +154,7 @@
 	<magnet_offset x="0" y="0" z="0"/>
 	<connector_axis x="0" y="1" z="0"/>
 	<connector_up x="1" y="0" z="0"/>
-	<tooltip_properties description="Les fenêtres d'angle sont de forme triangulaire, idéales pour créer des coins entre des fenêtres inclinées." short_description="Élément de fenêtre de base."/>
+	<tooltip_properties description="Les fenêtres d'angle sont de forme triangulaire, ce qui les rend utiles pour créer des coins entre des fenêtres inclinées." short_description="Pièce de fenêtre de base."/>
 	<jet_engine_connections_prev/>
 	<jet_engine_connections_next/>
 	<particle_direction x="0" y="1" z="0"/>
