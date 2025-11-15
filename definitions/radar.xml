@@ -123,7 +123,7 @@
 	<magnet_offset x="0" y="0" z="0"/>
 	<connector_axis x="0" y="1" z="0"/>
 	<connector_up x="1" y="0" z="0"/>
-	<tooltip_properties description="This sensor outputs the distance and angle to a detected object within its range and field of view using radio waves. (Range : 5000) (Max FOV : 0.125)" short_description="A short range Radar that returns information about a detected object within its view."/>
+	<tooltip_properties description="Ce capteur fournit la distance et l'angle vers un objet détecté dans sa portée et son champ de vision à l'aide d'ondes radio. (Portée : 5000) (FOV maximal : 0.125)" short_description="Un radar à courte portée qui renvoie des informations sur un objet détecté dans son champ de vision."/>
 	<jet_engine_connections_prev/>
 	<jet_engine_connections_next/>
 	<particle_direction x="0" y="1" z="0"/>
@@ -131,4 +131,3 @@
 	<particle_bounds x="0.2" y="0.2" z="0.2"/>
 	<rope_hook_offset x="0" y="0" z="0"/>
 </definition>
-
