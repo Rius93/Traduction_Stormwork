@@ -244,7 +244,7 @@
 	<magnet_offset/>
 	<connector_axis/>
 	<connector_up/>
-	<tooltip_properties description="This sensor outputs the relative angle to detected objects within its range using underwater sound waves. The sensor will passively detect certain noisy components such as propellers or engines but can also send out a loud ping to detect quiet underwater bodies. While the ping input is held passive signals will be supressed. After activating a ping additional detected signals will appear momentarily in the data channel as the signal returns to the sonar. Activating another ping will override the previous ping and no further data will be returned from the old signal." short_description="A sonar that returns information about a detected objects within 60km."/>
+	<tooltip_properties description="Ce capteur fournit l'angle relatif vers les objets détectés dans sa portée en utilisant des ondes sonores sous-marines. Le capteur détecte passivement certains composants bruyants tels que les hélices ou les moteurs, mais peut aussi émettre un ping puissant pour détecter des corps sous-marins silencieux. Tant que l'entrée de ping est maintenue, les signaux passifs seront supprimés. Après l'activation d'un ping, des signaux détectés supplémentaires apparaîtront momentanément sur le canal de données à mesure que le signal revient vers le sonar. L'activation d'un autre ping annulera le précédent et aucune autre donnée ne sera renvoyée par l'ancien signal." short_description="Un sonar qui renvoie des informations sur des objets détectés dans un rayon de 60 km."/>
 	<jet_engine_connections_prev/>
 	<jet_engine_connections_next/>
 	<particle_direction/>
@@ -252,4 +252,3 @@
 	<particle_bounds/>
 	<rope_hook_offset/>
 </definition>
-
